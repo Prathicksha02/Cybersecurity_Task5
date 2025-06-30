@@ -1,4 +1,4 @@
-# Task5
+# Task-5
 
 ## Objective
 The purpose of this task is to capture and analyze live network traffic using Wireshark, identify different types of protocols, and observe packet-level communication.
@@ -41,6 +41,8 @@ The purpose of this task is to capture and analyze live network traffic using Wi
 
 Applied display filters one by one in Wireshark to isolate protocol-specific traffic:
 
+---
+
 +-----------+----------------+---------------------------------------------------------------+
 | Protocol  | Filter Applied | Observations                                                  |
 +-----------+----------------+---------------------------------------------------------------+
@@ -55,6 +57,7 @@ Applied display filters one by one in Wireshark to isolate protocol-specific tra
 | TCP       | tcp            | General transport-level packets for connections               |
 +-----------+----------------+---------------------------------------------------------------+
 
+---
 
 7. Saved the capture as:
    

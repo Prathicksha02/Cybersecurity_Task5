@@ -17,9 +17,9 @@ The purpose of this task is to capture and analyze live network traffic using Wi
 
 1. Run the following command in terminal:
    
-  **sudo wireshark**
+   **sudo wireshark**
   
-  Wireshark GUI launched successfully.
+   Wireshark GUI launched successfully.
 2. Choose **ethO**, the active wireless network interface showing traffic activity.
 
 3. Started packet capture by double-clicking the interface.
@@ -38,17 +38,18 @@ The purpose of this task is to capture and analyze live network traffic using Wi
    This generated secure HTTPS/TLS traffic.
 5. After sufficient traffic generation, stopped the capture using the red square button in Wireshark.
 6. Apply Protocol Filters
+
 Applied display filters one by one in Wireshark to isolate protocol-specific traffic:
 
 --------------------------------------------------------------------------------------------
 | Protocol  | Filter Applied | Observations                                                 |
---------------------------------------------------------------------------------------------
+----------------------------- ---------------------------------------------------------------
 | DNS       | dns            | Domain lookup packets visible                                |
 | ICMP      | icmp           | Ping request and reply packets visible                       |
 | HTTP      | http           | Unencrypted web traffic from neverssl.com visible            |
 | TLS       | tls            | Encrypted HTTPS traffic visible after visiting google.com    |
 | TCP       | tcp            | General transport-level packets for connections              |
----------------------------------------------------------------------------------------------
+------------ ---------------- --------------------------------------------------------------
 
 7. Saved the capture as:
    

@@ -37,11 +37,11 @@ The purpose of this task is to capture and analyze live network traffic using Wi
 
    This generated secure HTTPS/TLS traffic.
 5. After sufficient traffic generation, stopped the capture using the red square button in Wireshark.
-6. ## Apply Protocol Filters
 
-    Applied display filters one by one in Wireshark to isolate protocol-specific traffic:
+---
 
-```
+## Apply Protocol Filters
+
 ---------------------------------------------------------------------------------------------
 | Protocol  | Filter Applied | Observations                                                  |
 |-----------|----------------|---------------------------------------------------------------|
@@ -51,8 +51,8 @@ The purpose of this task is to capture and analyze live network traffic using Wi
 | TLS       | tls            | Encrypted HTTPS traffic visible after visiting google.com     |
 | TCP       | tcp            | General transport-level packets for connections               |
 
-```
 
+---
 
 7. Saved the capture as:
    

@@ -7,9 +7,9 @@ The purpose of this task is to capture and analyze live network traffic using Wi
 
 ## Tools Used
 
-**Wireshark** – Network packet analyzer
-**Terminal (Kali Linux)**– For generating network traffic
-**Browser**– For secure web traffic testing
+1. **Wireshark** – Network packet analyzer
+2. **Terminal (Kali Linux)**– For generating network traffic
+3. **Browser**– For secure web traffic testing
 
 ---
 
@@ -41,15 +41,20 @@ The purpose of this task is to capture and analyze live network traffic using Wi
 
 Applied display filters one by one in Wireshark to isolate protocol-specific traffic:
 
---------------------------------------------------------------------------------------------
-| Protocol  | Filter Applied | Observations                                                 |
------------------------------ ---------------------------------------------------------------
-| DNS       | dns            | Domain lookup packets visible                                |
-| ICMP      | icmp           | Ping request and reply packets visible                       |
-| HTTP      | http           | Unencrypted web traffic from neverssl.com visible            |
-| TLS       | tls            | Encrypted HTTPS traffic visible after visiting google.com    |
-| TCP       | tcp            | General transport-level packets for connections              |
------------- ---------------- --------------------------------------------------------------
++-----------+----------------+---------------------------------------------------------------+
+| Protocol  | Filter Applied | Observations                                                  |
++-----------+----------------+---------------------------------------------------------------+
+| DNS       | dns            | Domain lookup packets visible                                 |
++-----------+----------------+---------------------------------------------------------------+
+| ICMP      | icmp           | Ping request and reply packets visible                        |
++-----------+----------------+---------------------------------------------------------------+
+| HTTP      | http           | Unencrypted web traffic from neverssl.com visible             |
++-----------+----------------+---------------------------------------------------------------+
+| TLS       | tls            | Encrypted HTTPS traffic visible after visiting google.com     |
++-----------+----------------+---------------------------------------------------------------+
+| TCP       | tcp            | General transport-level packets for connections               |
++-----------+----------------+---------------------------------------------------------------+
+
 
 7. Saved the capture as:
    
